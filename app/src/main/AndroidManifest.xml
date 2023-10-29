@@ -28,6 +28,10 @@
         <meta-data
             android:name="xposedclassname"
             android:value="aimardcr.co.id.bypass_dana.NotSoUnsafe" />
+        
+        <meta-data
+            android:name="xposedscope"
+            android:value="id.dana"/>
 
         <activity
             android:name=".MainActivity"
