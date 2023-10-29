@@ -20,5 +20,33 @@ public class NotSoUnsafe implements IXposedHookLoadPackage {
                 param.setResult(null);
             }
         });
+
+        XposedHelpers.findAndHookMethod("id.dana.DanaApplication", lpparam.classLoader, "emuCb", long.class, long.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                param.setResult(null);
+            }
+        });
+
+        XposedHelpers.findAndHookMethod("id.dana.DanaApplication", lpparam.classLoader, "hookCb", long.class, long.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                param.setResult(null);
+            }
+        });
+
+        XposedHelpers.findAndHookMethod("id.dana.DanaApplication", lpparam.classLoader, "rootCb", long.class, long.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                param.setResult(null);
+            }
+        });
+
+        XposedHelpers.findAndHookMethod("id.dana.DanaApplication", lpparam.classLoader, "tampCb", long.class, long.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                param.setResult(null);
+            }
+        });
     }
 }
