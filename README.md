@@ -1,5 +1,5 @@
 # Bypass DANA
-This Xposed module will bypass DANA's Integrity Check by hooking function from `id.dana.utils.IntegrityChecker` class.
+This Xposed module will bypass DANA's Integrity Check by hooking several security check functions.
 
 # Installation
 1. Install Xposed (Alternative: EdXposed, LSPosed)
