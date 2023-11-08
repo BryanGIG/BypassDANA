@@ -16,7 +16,6 @@ public class NotSoUnsafe implements IXposedHookLoadPackage {
         XposedHelpers.findAndHookMethod("id.dana.utils.IntegrityChecker", lpparam.classLoader, "ArraysUtil$2", String.class, new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                XposedBridge.log("Bypassing IntegrityChecker.ArraysUtil$2: " + param.args[0]);
                 param.setResult(null);
             }
         });
