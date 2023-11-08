@@ -13,7 +13,7 @@ public class NotSoUnsafe implements IXposedHookLoadPackage {
             return;
         }
 
-        XposedHelpers.findAndHookMethod("id.dana.utils.IntegrityChecker", lpparam.classLoader, "ArraysUtil$2", String.class, new XC_MethodHook() {
+        XposedHelpers.findAndHookMethod("id.dana.utils.IntegrityChecker", lpparam.classLoader, "ArraysUtil", String.class, new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                 param.setResult(null);
