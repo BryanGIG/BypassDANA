@@ -1,6 +1,9 @@
 # Bypass DANA
 This Xposed module will bypass DANA's Integrity Check by hooking several security check functions.
 
+# Tested
+Currently Support until DANA v2.49.1
+
 # Installation
 1. Install Xposed (Alternative: EdXposed, LSPosed)
 2. Install the release `.apk`
