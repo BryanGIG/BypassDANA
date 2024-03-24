@@ -2,7 +2,7 @@
 This Xposed module will bypass DANA's Integrity Check by hooking several security check functions.
 
 # Tested
-Currently Support until DANA v2.49.1
+Support for DANA Stable
 
 # Installation
 1. Install Xposed (Alternative: EdXposed, LSPosed)
