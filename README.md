@@ -1,5 +1,5 @@
 # Bypass DANA
-This Xposed module will bypass DANA's Integrity Check by hooking several security check functions.
+Bypass DANA's Integrity Check (Root).
 
 # Tested
 Support for DANA Stable
@@ -10,6 +10,5 @@ Support for DANA Stable
 3. Enable the module and add DANA to the app list
 4. Reboot your phone and enjoy!
 
-# Disclaimer
-This is for educational purpose only.
-If you are from DANA and want me to take down this repository, kindly send me an email aimaradhitya@gmail.com
+# This is a Fork!
+This is a fork of the original project by [aimardcr](https://github.com/aimardcr) which is already being deleted. I'm just keeping it alive.

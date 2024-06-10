@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.BypassDANA">
+        android:label="@string/app_name">
 
         <meta-data
             android:name="xposedmodule"
@@ -15,7 +11,7 @@
 
         <meta-data
             android:name="xposeddescription"
-            android:value="Bypass DANA's Integrity Check" />
+            android:value="Bypass DANA's Integrity Check (Root)." />
 
         <meta-data
             android:name="xposedminversion"
@@ -23,7 +19,7 @@
 
         <meta-data
             android:name="xposedclassname"
-            android:value="aimardcr.co.id.bypass_dana.NotSoUnsafe" />
+            android:value="io.github.bryangig.bypassdana.NotSoUnsafe" />
         
         <meta-data
             android:name="xposedscope"
