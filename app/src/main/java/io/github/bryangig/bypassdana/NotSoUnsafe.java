@@ -46,6 +46,20 @@ public class NotSoUnsafe implements IXposedHookLoadPackage {
                     }
                 }
             });
+
+            XposedHelpers.findAndHookMethod("id.dana.onboarding.verify.VerifyNumberFragment", classLoader, "onStart", new XC_MethodHook() {
+                @Override
+                protected void beforeHookedMethod(MethodHookParam param) {
+                    try {
+                        var clazz = XposedHelpers.findClass("androidx.fragment.app.Fragment", classLoader);
+                        XposedHelpers.findField(clazz, "mCalled").set(param.thisObject, true);
+                        param.setResult(null);
+                    } catch (Exception e) {
+                        XposedBridge.log(e);
+                    }
+                }
+            });
+
             XposedHelpers.findAndHookMethod(ContextWrapper.class, "startActivity", Intent.class, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(MethodHookParam param) {
